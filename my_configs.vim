@@ -49,7 +49,7 @@ let g:tagbar_type_cpp = {
 :set tags+=/data/workplace/example/tags
 
 " 正向遍历同名标签
-nmap <Leader>tn :tnext<CR>
+nmap <Leader>te :tnext<CR>
 " 反向遍历同名标签
 nmap <Leader>tp :tprevious<CR>
 
