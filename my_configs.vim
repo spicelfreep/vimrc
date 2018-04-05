@@ -46,7 +46,7 @@ let g:tagbar_type_cpp = {
      \ }
 \ }
 
-:set tags+=/data/workplace/example/tags
+" :set tags+=/data/workplace/example/tags
 
 " 正向遍历同名标签
 nmap <Leader>te :tnext<CR>
@@ -60,3 +60,38 @@ nmap <Leader>tp :tprevious<CR>
 let g:indexer_ctagsCommandLineOptions="--c++-kinds=+p+l+x+c+d+e+f+g+m+n+s+t+u+v --fields=+iaSl --extra=+q"
 
 " --------------- ~/.indexer_files ---------------
+
+" NERDTree config 
+map <F2> :NERDTreeToggle<CR>
+autocmd vimenter * NERDTree
+autocmd VimEnter * wincmd p
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
+" 显示行号
+let NERDTreeShowLineNumbers=1
+let NERDTreeAutoCenter=1
+" 是否显示隐藏文件
+let NERDTreeShowHidden=1
+" 显示书签列表
+let NERDTreeShowBookmarks=1
+" 设置宽度
+let NERDTreeWinSize=31
+" 在终端启动vim时，共享(显示)NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
+" 忽略一下文件的显示
+let NERDTreeIgnore=['\.pyc','\~$','\.swp']
+
+
+let g:NERDTreeIndicatorMapCustom = {
+    \ "Modified"  : "✹",
+    \ "Staged"    : "✚",
+    \ "Untracked" : "✭",
+    \ "Renamed"   : "➜",
+    \ "Unmerged"  : "═",
+    \ "Deleted"   : "✖",
+    \ "Dirty"     : "✗",
+    \ "Clean"     : "✔︎",
+    \ 'Ignored'   : '☒',
+    \ "Unknown"   : "?"
+    \ }
+
+let g:NERDTreeShowIgnoredStatus = 1
