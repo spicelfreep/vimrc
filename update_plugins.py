@@ -54,14 +54,12 @@ lightline.vim https://github.com/itchyny/lightline.vim
 vim-abolish https://github.com/tpope/tpope-vim-abolish
 mru.vim https://github.com/vim-scripts/mru.vim
 nerdcommenter https://github.com/scrooloose/nerdcommenter
+
 nerdtree-git-plugin https://github.com/Xuyuanp/nerdtree-git-plugin.git
 DfrankUtil https://github.com/vim-scripts/DfrankUtil.git
 indexer.tar.gz https://github.com/vim-scripts/indexer.tar.gz.git
 vimprj https://github.com/vim-scripts/vimprj.git
 tagbar https://github.com/vim-scripts/tagbar.git
-
-
-
 
 """.strip()
 
